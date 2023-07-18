@@ -1,0 +1,40 @@
+public class TESTNG_NOT {
+/*
+https://testng.org/doc/documentation-main.html
+​
+Junit'in gelismis versiyonudur.
+İsmi Next Generation Test kelimelerinden türetilmiş, ve Cédric Beust tarafından oluşturulmuştur.
+Açık Kaynak kodludur.
+TestNG bir test kütüphanesidir.
+TestNG sadece JAVA ile calisir ve JDK 7 ve daha ust versiyonlari gereklidir
+TestNG ile ilgili dokumanlara asagidaki adresten ulasilabilir
+>https://testng.org/doc/documentation-main.html
+​
+TestNG tester'lara daha fazla kontrol imkani verir ve testleri daha etkili yapmamizi saglar.
+Tester'lar TestNG'yi etkili bir framework tasarlamak ve test case'leri TestNG annotation'ları ile
+organize etmek için kullanırlar.
+Test caseleri siralama ozelligi (priority) ve test caselerin birbirine bagimliligi (dependsOnMethod)
+ bize testleri organize etmekte yardim eder.
+Paralel ve Cross-Browser Test yapmamiza imkan tanir
+Kullanisli HTML veya xml raporlari olusturmaya yarar
+Data Provider ile DDT(data driven testing) imkani saglar
+​
+Bir TestNG sınıfı için yapılandırma bilgileri:
+​
+@BeforeSuite: Açıklamalı yöntem, bu paketteki tüm testler çalıştırılmadan önce çalıştırılacaktır.
+​
+@AfterSuite: Açıklamalı yöntem, bu paketteki tüm testler çalıştırıldıktan sonra çalıştırılacaktır.
+​
+@BeforeTest: Açıklamalı yöntem, <test> etiketi içindeki sınıflara ait herhangi bir test yöntemi çalıştırılmadan önce çalıştınlacaktır. @AfterTest: <test> etiketi içindeki sınıflara ait tüm test yöntemleri çalıştıktan sonra açıklamalı yöntem çalıştırılacaktır.
+​
+@BeforeGroups: Bu yapılandırma yönteminin daha önce çalışacağı grupların listesi. Bu yöntemin, bu gruplardan herhangi birine ait olan ilk test yöntemi çağrılmadan kısa bir süre önce çalışması garanti edilir.
+​
+@Gruplardan Sonra: Bu yapılandırma yönteminin peşinden çalışacağı grupların listesi. Bu yöntemin, bu gruplardan herhangi birine ait olan son test yöntemi çağrıldıktan kısa bir süre sonra çalışması garanti edilir.
+​
+@BeforeClass: Açıklamalı yöntem, geçerli sınıftaki ilk test yöntemi çağrılmadan önce çalıştırılacaktır.
+​
+@AfterClass: Açıklamalı yöntem, geçerli sınıftaki tüm test yöntemleri çalıştırıldıktan sonra çalıştırılacaktır.
+​
+@BeforeMethod: Açıklamalı yöntem, her test yönteminden önce çalıştırılacaktır.
+​
+@AfterMethod: Açıklamalı yöntem, her test yönteminden sonra çalıştırılacaktır.
