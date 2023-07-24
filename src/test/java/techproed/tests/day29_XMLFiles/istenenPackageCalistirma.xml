@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="Istenen Package Calistirma">
+        <packages>
+           <package name="techproed.tests.day25_POM"/>
+           <package name="techproed.tests.day23_Annotation"/>
+        </packages>
+    </test>
+</suite>
+
+<!-- TestNG'de istenen packagelari veya class'lari veya methodlari XML file ile calistirabiliriz.
+  XML'i calistirmak istedigimiz package yada class uzerine sag tiklayarak create TestNG xml sekmesinden
+  olusturabiliriz. Bu sekme cikmiyorsa once File Settings plugings marketPlace bolumundeki arama kismina xml yazarak
+  TestNg xml pluginini projemize yukleriz sonra xml file olusturmak icin yukarida belirttigimiz adimlari uygulariz.
+  Dosyamizi projemizde gorebilmek icin file->reload all from disc sekmesine basip en altta dosyamizin olustugunu goruruz.
+  Dosyamizi olusturduktan sonra ctrl alt l tuslarina basarak dosyadaki kodlari duzenleriz.
+  XML file da taglar mecbur <suite> tagiyla baslar <test> tagiyla devam eder.
+      -->
+<!-- Sadece istedigimiz package'leri calistiracaksak <classes> taglariyla birlikte herseyi sileriz
+ <package> taglari icin calistirmak istedigimiz <package> tagiyla package' i calistiririz -->

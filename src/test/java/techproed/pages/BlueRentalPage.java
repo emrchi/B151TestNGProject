@@ -15,4 +15,19 @@ public class BlueRentalPage {
     public WebElement email;
     @FindBy(xpath = "(//button[@type='button'])[1]")
     public WebElement loginVerify;
+    @FindBy(xpath = "//div[@role='alert']")
+    public WebElement mesajVerify;
+    @FindBy(xpath = "//*[.='Logout']")
+    public WebElement logout;
+    @FindBy(xpath = "//*[.='OK']")
+    public WebElement okLogout;
+    @FindBy(xpath = "//div[@class='invalid-feedback'][1]")
+    public WebElement invalidEmail;
+
+    @FindBy(xpath = "//*[@name='car']")
+    public WebElement ddmCar;
+
+
+
+
 }
