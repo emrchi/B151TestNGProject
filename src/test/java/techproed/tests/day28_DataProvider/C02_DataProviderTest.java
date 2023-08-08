@@ -1,14 +1,14 @@
 package techproed.tests.day28_DataProvider;
 
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.Keys;
+import org.testng.ITestResult;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import techproed.pages.GooglePage;
 import techproed.utilities.ConfigReader;
 import techproed.utilities.Driver;
 import techproed.utilities.ReusableMethods;
-
-import java.awt.dnd.DragGestureEvent;
 
 public class C02_DataProviderTest {
 
@@ -21,7 +21,7 @@ public class C02_DataProviderTest {
         return new Object[][]{{"volvo"},{"ford"},{"mercedes"}, {"audi"}};
     }
     @Test(dataProvider = "araclar")
-    public void test01(String araclar) {
+    public void test01(String araclar, ITestResult result) {
 
         // google sayfasina git
         Driver.getDriver().get(ConfigReader.getProperty("googleUrl"));
@@ -32,7 +32,9 @@ public class C02_DataProviderTest {
         ReusableMethods.bekle(2);
 
         //Her arama icin sayfa resmi alalim
-        ReusableMethods.tumSayfaResmi();
+
+
+        ReusableMethods.tumSayfaResmi(result.getName());
 
         //sayfayi kapatalim
         Driver.closeDriver();

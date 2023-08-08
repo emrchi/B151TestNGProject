@@ -22,6 +22,7 @@ public class C03_PropertiesKullanimi {
         //arama kutusunda iphone aratalim
         Driver.getDriver().findElement(By.id("twotabsearchtextbox")).sendKeys("iphone", Keys.ENTER);
 
+
         //Sayfayi kapatalim
         Driver.closeDriver();
 
